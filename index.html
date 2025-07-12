@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub - Order Your Favorite Meals</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========================================================= -->
+    <!-- 1. Navbar Section -->
+    <!-- ========================================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Foodie Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================================= -->
+    <!-- 2. Home Page / Hero Section -->
+    <!-- ========================================================= -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3 animate__animated animate__fadeInDown">Welcome to Foodie Hub</h1>
+            <p class="lead animate__animated animate__fadeInUp">Order your favorite meals instantly!</p>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 3. Restaurants List Section -->
+    <!-- ========================================================= -->
+    <section id="restaurants" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold text-primary">Our Restaurants</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Restaurant Card 1 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant1.jpg" class="card-img-top" alt="Restaurant Name 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Flavor Fusion Bistro</h5>
+                            <p class="card-text text-muted">A delightful blend of international cuisines.</p>
+                            <a href="#menu-flavor-fusion" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Card 2 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant6.jpg" class="card-img-top" alt="Restaurant Name 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">The Green Spoon</h5>
+                            <p class="card-text text-muted">Fresh and healthy vegan options for all.</p>
+                            <a href="#menu-green-spoon" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Card 3 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant3.jpg" class="card-img-top" alt="Restaurant Name 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pizza Paradise</h5>
+                            <p class="card-text text-muted">Authentic Italian pizzas, made with love.</p>
+                            <a href="#menu-pizza-paradise" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Card 4 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant4.jpg" class="card-img-top" alt="Restaurant Name 4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Spice Route Grill</h5>
+                            <p class="card-text text-muted">Exotic flavors from across Asia.</p>
+                            <a href="#menu-spice-route-grill" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Card 5 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant5.jpg" class="card-img-top" alt="Restaurant Name 5">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Burger Bliss</h5>
+                            <p class="card-text text-muted">Gourmet burgers and crispy fries.</p>
+                            <a href="#menu-burger-bliss" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Card 6 -->
+                <div class="col">
+                    <div class="card h-100 restaurant-card shadow-sm">
+                        <img src="images/restaurant2.jpg" class="card-img-top" alt="Restaurant Name 6">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sweet Delights Bakery</h5>
+                            <p class="card-text text-muted">Freshly baked pastries and desserts.</p>
+                            <a href="#menu-sweet-delights-bakery" class="btn btn-primary view-menu-btn">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. Restaurant Menu Section -->
+    <!-- ========================================================= -->
+     <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold text-primary">Our Delicious Menus</h2>
+
+            <!-- Menu for Flavor Fusion Bistro -->
+            <div id="menu-flavor-fusion" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary">Flavor Fusion Bistro - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Menu Item 1 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish14.jpg" class="img-fluid rounded-start menu-item-img" alt="Spicy Noodles">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Spicy Noodles</h5>
+                                        <p class="card-text text-muted">Wok-tossed noodles with fresh vegetables and a spicy kick.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">200 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish13.jpg" class="img-fluid rounded-start menu-item-img" alt="Creamy Chicken Curry">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Creamy Chicken Curry</h5>
+                                        <p class="card-text text-muted">Tender chicken pieces in a rich, aromatic curry sauce.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">300 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish12.jpg" class="img-fluid rounded-start menu-item-img" alt="Vegetable Spring Rolls">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Vegetable Spring Rolls</h5>
+                                        <p class="card-text text-muted">Crispy spring rolls filled with fresh vegetables.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">150 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish11.jpg" class="img-fluid rounded-start menu-item-img" alt="Mango Sticky Rice">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Mango Sticky Rice</h5>
+                                        <p class="card-text text-muted">Sweet sticky rice with fresh mango slices and coconut milk.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">250 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu for The Green Spoon -->
+            <div id="menu-green-spoon" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary mt-5">The Green Spoon - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Menu Item 1 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish10.jpg" class="img-fluid rounded-start menu-item-img" alt="Quinoa Salad">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Mediterranean Quinoa Salad</h5>
+                                        <p class="card-text text-muted">Fresh quinoa with cucumber, tomatoes, olives, and feta.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">200 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish9.jpg" class="img-fluid rounded-start menu-item-img" alt="Lentil Soup">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Hearty Lentil Soup</h5>
+                                        <p class="card-text text-muted">A comforting and nutritious lentil soup, perfect for any weather.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">100 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more dishes for The Green Spoon here -->
+                </div>
+            </div>
+
+            <!-- Menu for Pizza Paradise -->
+            <div id="menu-pizza-paradise" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary mt-5">Pizza Paradise - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Pizza Item 1 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish8.jpg" class="img-fluid rounded-start menu-item-img" alt="Margherita Pizza">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Margherita Pizza</h5>
+                                        <p class="card-text text-muted">Classic pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">400 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pizza Item 2 -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish7.jpg" class="img-fluid rounded-start menu-item-img" alt="Pepperoni Pizza">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Pepperoni Pizza</h5>
+                                        <p class="card-text text-muted">Loaded with spicy pepperoni and extra cheese.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">350 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more menu sections for other restaurants here following the same pattern -->
+            <!-- Example for Spice Route Grill: -->
+            <div id="menu-spice-route-grill" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary mt-5">Spice Route Grill - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Dish 1 for Spice Route Grill -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish3.jpg" class="img-fluid rounded-start menu-item-img" alt="Chicken Tikka Masala">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Chicken Tikka Masala</h5>
+                                        <p class="card-text text-muted">Classic Indian dish with tender chicken in a creamy tomato sauce.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">250 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dish 2 for Spice Route Grill -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish4.jpg" class="img-fluid rounded-start menu-item-img" alt="Lamb Biryani">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Lamb Biryani</h5>
+                                        <p class="card-text text-muted">Fragrant basmati rice cooked with tender lamb and aromatic spices.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">300 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example for Burger Bliss: -->
+            <div id="menu-burger-bliss" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary mt-5">Burger Bliss - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Dish 1 for Burger Bliss -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish5.jpg" class="img-fluid rounded-start menu-item-img" alt="Classic Cheeseburger">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Classic Cheeseburger</h5>
+                                        <p class="card-text text-muted">Juicy beef patty, cheddar cheese, lettuce, tomato, onion.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">250 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dish 2 for Burger Bliss -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish6.jpg" class="img-fluid rounded-start menu-item-img" alt="Sweet Potato Fries">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Sweet Potato Fries</h5>
+                                        <p class="card-text text-muted">Crispy sweet potato fries, perfect side for any burger.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">100 AFG </span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example for Sweet Delights Bakery: -->
+            <div id="menu-sweet-delights-bakery" class="menu-restaurant-section mb-5 pb-4 border-bottom">
+                <h3 class="mb-4 text-secondary mt-5">Sweet Delights Bakery - Menu</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <!-- Dish 1 for Sweet Delights Bakery -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish1.jpg" class="img-fluid rounded-start menu-item-img" alt="Chocolate Croissant">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Chocolate Croissant</h5>
+                                        <p class="card-text text-muted">Flaky pastry with rich chocolate filling.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">200 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dish 2 for Sweet Delights Bakery -->
+                    <div class="col">
+                        <div class="card menu-item-card shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/dish2.jpg" class="img-fluid rounded-start menu-item-img" alt="Blueberry Muffin">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Blueberry Muffin</h5>
+                                        <p class="card-text text-muted">Soft muffin bursting with fresh blueberries.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold text-success">150 AFG</span>
+                                            <span class="badge bg-success badge-available">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can add more menu sections for other restaurants like Pizza Paradise here -->
+
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. Order Form Section -->
+    <!-- ========================================================= -->
+        <section id="order" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold text-primary">Place Your Order</h2>
+            <form action="#" method="post" class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="customerName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="customerName" required>
+                        <div class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid phone number.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="restaurantSelect" class="form-label">Choose Restaurant</label>
+                        <select class="form-select" id="restaurantSelect" required>
+                            <option selected disabled value="">Select a restaurant...</option>
+                            <option>Flavor Fusion Bistro</option>
+                            <option>The Green Spoon</option>
+                            <option>Pizza Paradise</option>
+                            <option>Spice Route Grill</option>
+                            <option>Burger Bliss</option>
+                            <option>Sweet Delights Bakery</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a restaurant.
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-success btn-lg mt-4 order-submit-btn">Place Order</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- 6. About Section -->
+    <!-- ========================================================= -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 fw-bold text-primary">About Foodie Hub</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about-foodiehub.jpg" class="img-fluid rounded shadow-lg" alt="About Foodie Hub">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Foodie Hub is your ultimate destination for discovering and ordering delicious meals from a wide variety of local restaurants. Our mission is to connect food lovers with their favorite dishes, offering a seamless and enjoyable ordering experience.</p>
+                    <p>We believe that great food brings people together. That's why we've partnered with the best eateries in town to bring their culinary masterpieces right to your doorstep. From gourmet delights to comforting classics, Foodie Hub makes every meal an occasion.</p>
+                    <p>Explore, order, and savor the flavors with Foodie Hub – where your next favorite meal is just a click away!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. Contact Section / Footer -->
+    <!-- ========================================================= -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold">Foodie Hub</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>123 Foodie Lane, Culinary City, 54321</p>
+                    <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@foodiehub.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>+93 (07) 123-4567</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
+                    <p class="mt-3 mb-0">&copy; 2025 Foodie Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (placed at the end of body for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
